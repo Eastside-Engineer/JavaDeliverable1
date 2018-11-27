@@ -57,15 +57,15 @@ public class WhatToEat {
 	    
 	    if (partySize == 1)
 	    {
-	        PartySizeMsg = " prepared in your microwave"; 
+	        PartySizeMsg = " prepared in your microwave."; 
 	    }
 	    else if (partySize >= 2 && partySize <= 12)
 	    {
-	        PartySizeMsg = " prepared in your kitchen"; 
+	        PartySizeMsg = " prepared in your kitchen."; 
 	    }
 	    else //anything higher then 12 
 	    {
-	        PartySizeMsg = " prepared with caterer"; 
+	        PartySizeMsg = " prepared with a caterer."; 
 	    }
 	    scan.close();
 	    
@@ -73,15 +73,15 @@ public class WhatToEat {
 	    {
 	        // case 1 is for a Casual event 
 	        case 1:
-	            MsgConstructer = MsgConstructer + "Casual event for " + partySize + " participants you should serve sandwiches " + PartySizeMsg; 
+	            MsgConstructer = MsgConstructer + "casual event for "+ partySize + " participants you should serve sandwiches"+ PartySizeMsg; 
 	            break; 
 	        // case 2 is for semi event 
 	        case 2:
-	            MsgConstructer = MsgConstructer + "semi formal for" + partySize + " particpants you should serve fried chicken " + PartySizeMsg; 
+	            MsgConstructer = MsgConstructer + "semi-formal for "+ partySize + " particpants you should serve fried chicken"+ PartySizeMsg; 
 	            break;
 	        // case 3 is formal 
 	        case 3: 
-	            MsgConstructer = MsgConstructer + "formal event for " + partySize + " particpants you should serve Chicken Parmesan " + PartySizeMsg; 
+	            MsgConstructer = MsgConstructer + "formal event for "+ partySize + " particpants you should serve Chicken Parmesan"+ PartySizeMsg; 
 	            break;
 	    }
 	    System.out.println(MsgConstructer);
